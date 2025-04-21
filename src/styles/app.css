@@ -1,0 +1,249 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav_bar {
+  /* background: #7e61a5; */
+  background: #6b2869;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav_bar a {
+  color: #fff !important;
+}
+
+.menu_items {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.menu_items a {
+  color: #fff !important;
+}
+
+input {
+  border: 0px;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #7e61a5;
+}
+
+button {
+  border: 0px;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 5px;
+  outline: none;
+  background: #7e61a5;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.todo_container {
+  margin: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: #434343;
+  font-weight: bold;
+  display: flex;
+}
+
+.single_todo {
+  font-size: 14px;
+  background: #d0b7f0;
+  color: #434343;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container {
+  background-color: #c87cc6;
+  min-height: 100vh; 
+  width: 100vw;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.to-do {
+  /* background-color: #f2bff0; */
+  background: #6b2869;
+  color: #fff;
+      width: 700px;
+      height: 250px;
+      /* height: fit-content;  */
+      margin: 10px;
+      border-radius: 15px; 
+      box-shadow: 5px 5px 10px #806798;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+}
+
+.grid-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start; 
+}
+
+ .calendar {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  /* background: #f2bff0; */
+  background: #6b2869;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #806798;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.calendar-day {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.today {
+  background-color: #4f1d4d; /* Darker color for today */
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cloud{
+      width: 220px;
+      height: 275px; 
+      margin: 10px;
+      border-radius: 15px; 
+      box-shadow: 5px 5px 10px #806798;
+      display: flex;
+}
+
+.girl{
+  width: 250px;
+  height: 300px; 
+  margin: 10px;
+  border-radius: 15px; 
+  box-shadow: 5px 5px 10px #806798;
+  display: flex;
+}
+
+.sky{
+  width: 650px;
+  height: 300px; 
+  margin: 10px;
+  border-radius: 15px; 
+  box-shadow: 5px 5px 10px #806798;
+  display: flex;
+}
+
+.quote {
+  /* background-color: #f2bff0; */
+  background: #6b2869;
+  color: #fff;
+  width: 560px;
+  height: 275px; 
+  margin: 10px ; 
+  border-radius: 15px; 
+  box-shadow: 8px 8px 15px #806798;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 28px;
+  font-style: italic;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  line-height: 1.4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.todo-list {
+  list-style: circle;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.todo-item {
+  display: flex;
+  width: 550px;
+  height: 25px;
+  align-items: center;
+  justify-content: space-between;
+  /* background: #f2bff0; */
+  background: #732e71;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 5px #4a1948;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 80px; /* Spacing between checkbox, text, and date */
+}
+
+.todo-checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+.todo-task {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #9f7b9e;
+}
+
+.todo-view {
+  text-decoration: none;
+  color: #f8f1f1;
+  transition: transform 0.2s ease-in-out;
+}
+
+.todo-view:hover {
+  transform: scale(1.2);
+  color: #9f7b9e;
+}
+
+
